@@ -1,27 +1,28 @@
 {
-  "name": "metronome-one",
+  "name": "axora-soft-blog",
   "version": "1.0.0",
-  "description": "Web page like an apple store",
+  "description": "Blog for axora-soft.com",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ilyashablovsky/Metronome-One.git"
+    "url": "git+https://github.com/ilyashablovsky/Axora-Soft-Blog.git"
   },
   "author": "Ilya Shablovskiy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ilyashablovsky/Metronome-One.git/issues"
+    "url": "https://github.com/ilyashablovsky/Axora-Soft-Blog.git/issues"
   },
-  "homepage": "https://github.com/ilyashablovsky/Metronome-One.git#readme",
+  "homepage": "https://github.com/ilyashablovsky/Axora-Soft-Blog.git#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",
     "gulp-group-css-media-queries": "^1.2.2",
-    "gulp-less": "^4.0.1"
+    "gulp-less": "^4.0.1",
+    "smart-grid": "^2.1.2"
   }
 }

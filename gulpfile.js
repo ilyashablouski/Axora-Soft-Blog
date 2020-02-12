@@ -7,17 +7,17 @@ const {
   dest
 } = require('gulp');
 // const pug = require('gulp-pug');
-// const less = require('gulp-less');
+const less = require('gulp-less');
 const gcmq = require('gulp-group-css-media-queries');
 // const autoprefixer = require('gulp-autoprefixer');
-const cleanCSS = require('gulp-clean-css');
+// const cleanCSS = require('gulp-clean-css');
 // const smartgrid = require('smart-grid');
 const browserSync = require('browser-sync').create();
 // const rename = require('gulp-rename');
 
 // Globs
 const config = {
-  root: './src',
+  root: './src/',
   // pug: {
   //   src: 'pug/+(index).pug',
   //   watch: 'pug/**/*.pug',
@@ -55,13 +55,13 @@ const config = {
  * @return {string} Return file's paths
  */
 function css() {
-  return src(config.root.css.src)
+  return src(config.root + config.css.src)
     .pipe(less())
     .pipe(gcmq())
     // .pipe(autoprefixer({
     //   browsers: ['last 2 versions'],
     // }))
-    .pipe(dest(config.root.css.dest))
+    .pipe(dest(config.root + config.css.dest))
     .pipe(browserSync.stream())
   // .pipe(cleanCSS({
   //   level: 2,
@@ -94,7 +94,7 @@ function css() {
 function livereload(done) {
   browserSync.init({
     server: {
-      baseDir: './src',
+      baseDir: './src/',
     },
   });
 
@@ -109,14 +109,15 @@ exports.css = css;
 // exports.grid = grid;
 // Build final bundle from pug, less, js
 exports.build = parallel(css);
+
 // Watch changes from pug, less, js
 exports.watch = series(css, livereload,
   function () {
-    watch('./src/blog.html', function (done) {
+    watch('./src/index.html', function (done) {
       browserSync.reload();
 
       done();
     });
 
-    watch(config.root.css.watch, css);
+    watch(config.root + config.css.watch, css);
   });
