@@ -8,7 +8,7 @@ const {
 } = require('gulp');
 // const pug = require('gulp-pug');
 const less = require('gulp-less');
-const gcmq = require('gulp-group-css-media-queries');
+// const gcmq = require('gulp-group-css-media-queries');
 // const autoprefixer = require('gulp-autoprefixer');
 // const cleanCSS = require('gulp-clean-css');
 // const smartgrid = require('smart-grid');
@@ -57,7 +57,7 @@ const config = {
 function css() {
   return src(config.root + config.css.src)
     .pipe(less())
-    .pipe(gcmq())
+    // .pipe(gcmq())
     // .pipe(autoprefixer({
     //   browsers: ['last 2 versions'],
     // }))
