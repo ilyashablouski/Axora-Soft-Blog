@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>Article post</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:500,700,800,900&amp;display=swap&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+  <div class="svg-sprite">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol viewbox="0 0 13 19" stroke="none" id="icon-address-pin">
+        <path
+          d="M12.9999 6.04895C12.9999 6.15629 12.9972 6.26297 12.9917 6.36893C13.1729 9.98561 10.3701 15.0868 6.87108 19C3.39054 15.1075 0.805117 10.0396 1.01155 6.42646C1.00388 6.30161 1.00005 6.17574 1.00005 6.04895C1.00005 2.70821 3.68632 0 6.99998 0C10.3136 0 12.9999 2.70821 12.9999 6.04895ZM6.99997 9C8.65682 9 9.99997 7.65685 9.99997 6C9.99997 4.34315 8.65682 3 6.99997 3C5.34312 3 3.99997 4.34315 3.99997 6C3.99997 7.65685 5.34312 9 6.99997 9Z" />
+      </symbol>
+      <symbol viewbox="0 0 50 38" stroke="none" id="icon-message-widget-btn">
+        <path
+          d="M45.1279 7.13893e-06L4.81456 18.7892C4.04981 19.1456 4.043 20.2306 4.80322 20.5966L11.3073 23.7279L34.9239 8.58329L16.9414 26.3707L16.819 33.7704L22.6529 29.9859L30.4146 33.6851C30.935 33.9332 31.5569 33.6908 31.7724 33.156L45.1279 7.13893e-06Z" />
+      </symbol>
+      <symbol viewbox="0 0 30 23" stroke="none" id="icon-quote">
+        <path
+          d="M15.9102 6.31661C15.9102 4.58429 16.4842 3.18052 17.6323 2.10528C18.8407 1.03005 20.3513 0.492432 22.164 0.492432C24.3392 0.492432 26.0613 1.20925 27.3302 2.6429C28.599 4.07655 29.2335 5.95821 29.2335 8.28788C29.2335 10.6773 28.8407 12.7083 28.0552 14.3809C27.3302 16.0535 26.4238 17.4572 25.3362 18.5922C24.309 19.6674 23.1912 20.5336 21.9827 21.1907C20.8347 21.788 19.8679 22.2361 19.0824 22.5347L16.0915 17.6066C17.3 17.069 18.3574 16.3521 19.2637 15.4561C20.2305 14.5601 20.7743 13.4251 20.8951 12.0512C19.6867 12.1109 18.5386 11.6629 17.451 10.7072C16.4238 9.69165 15.9102 8.22814 15.9102 6.31661ZM0.230469 6.31661C0.230469 4.58429 0.804487 3.18052 1.95252 2.10528C3.16098 1.03005 4.67156 0.492432 6.48425 0.492432C8.65947 0.492432 10.3815 1.20925 11.6504 2.6429C12.9193 4.07655 13.5537 5.95821 13.5537 8.28788C13.5537 10.6773 13.161 12.7083 12.3755 14.3809C11.6504 16.0535 10.7441 17.4572 9.65645 18.5922C8.62926 19.6674 7.51144 20.5336 6.30298 21.1907C5.15494 21.788 4.18817 22.2361 3.40267 22.5347L0.411738 17.6066C1.6202 17.069 2.6776 16.3521 3.58394 15.4561C4.55071 14.5601 5.09452 13.4251 5.21536 12.0512C4.0069 12.1109 2.85887 11.6629 1.77125 10.7072C0.744064 9.69165 0.230469 8.22814 0.230469 6.31661Z" />
+      </symbol>
+      <symbol viewbox="0 0 37 35" stroke="none" id="icon-star">
+        <path
+          d="M18.2383 0L22.504 13.1287H36.3084L25.1404 21.2426L29.4062 34.3713L18.2383 26.2574L7.07036 34.3713L11.3361 21.2426L0.168207 13.1287H13.9725L18.2383 0Z" />
+      </symbol>
+    </svg>
+  </div>
+
+  <header class="header compensate-for-scrollbar">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a class="logo" href="index.html">
+            <img src="assets/images/logo.svg">
+          </a>
+        </div>
+        <div class="header__menu">
+          <button class="menu-btn" type="button"><span></span>
+          </button>
+          <div class="menu-popup">
+            <div class="menu-popup__bg"></div>
+            <div class="menu-popup__inner">
+              <button class="menu-popup__close" type="button"></button>
+              <div class="menu-popup__content">
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link is-active" href="#">Blog</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                      <button class="nav__btn btn btn_border" type="button" data-src="#contact-popup"
+                        data-fancybox>Contact Us</button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <article class="article container">
+    <section class="article-header">
+      <span class="article-header__meta">case study</span>
+      <h2 class="h2">Creation of the Tuner One App</h2>
+      <ul class="article__meta item__meta">
+        <li>Jan 8, 2020</li>
+        <li>iOS&nbsp;&nbsp;Swift&nbsp;&nbsp;Music&nbsp;&nbsp;Entertainment</li>
+      </ul>
+    </section>
+
+    <section class="article-content article__article-content">
+      <div class="article-content__title">
+        <p>This article’s about the creation of the tuner app for guitar and other instruments. What makes it stand out
+          among many competitors, what our contribution is and what the result for our client is.</p>
+      </div>
+      <p class="article-content__text">We had the task to develop a mobile application. We did market analysis,
+        developed the design, programmed and promoted it on the App Store. <br><br>The main problems that competitors in
+        the
+        market had were: <br><br>1. There are a lot of tuners where the microphone sensitivity is poorly balanced. So if
+        you're
+        trying to tune an electric guitar that isn't connected to an amplifier you often just can't do it because the
+        signal is quiet.<br><br> 2. The smoothness and accuracy of tuning in many tuners is not calibrated. I.e. the
+        tuner arrow
+        deviates heavily from the right to the left and does not stand smoothly in the middle as in good hardware
+        tuners.<br><br> 3. Tuners often don't catch low frequencies well which is critical for bass guitars, pianos and
+        cello.
+        <br><br>4. It is not thought over in many tuners that while the adjustment they might be looked at from a
+        distance, for
+        example, at rehearsals in ensembles where it is not convenient to hold a phone in hands and it is necessary to
+        put it, for instance, on the floor.<br><br> 5. Most tuners do not take into consideration users with bad color
+        differences.<br><br> As a result, before the beginning of the application development we had to solve these 5
+        tasks +
+        add functionality: tuning fork, an opportunity to switch tools, change guitar tuning.<br><br> Eventually, we
+        came up
+        with this kind of design:</p>
+
+      <div class="image-block"><img src="assets/images/blog/post/post-image-1.jpg" alt=""></div>
+
+      <div class="article-content__title">
+        <p>The sensitivity of the microphone</p>
+      </div>
+      <p class="article-content__text">The sensitivity of the tuner is calibrated so that a user can adjust even an
+        electric guitar that is not connected to the amplifier. It is enough to put a phone near a guitar.</p>
+
+      <div class="article-content__title">
+        <p>Smooth and precise tuning</p>
+      </div>
+      <p class="article-content__text">We have tried a lot of ready-made engines and made a lot of tests. As a result,
+        we wrote the major part of the code ourselves and got the most precise definition of the sound at which it is
+        comfortable to adjust an instrument. This task took most of our time. But the result is worth it, it is one of
+        the best applications on the market in terms of strings' smoothness and sensitivity. You can even set up a full
+        octave piano with tuner one.</p>
+
+      <div class="article-content__title">
+        <p>Easy visibility of the interface from a distance</p>
+      </div>
+      <p class="article-content__text">We've taken into account that when tuning users might look at a tuner from a
+        distance, for example, when rehearsing in ensembles where it's not convenient to hold the phone and you need to
+        put it on the floor or on the sofa for instance. Therefore, we have developed the design with the most useful
+        action at the time of adjustment. <br><br>What kind of marketing strategy we used and what results we achieved
+        are
+        described in the next article, which will be published soon.<br><br> The tuner is available <a
+          class="article-content__text-link" href="https://go.onelink.me/RmRD/84687a5d">in the App Store</a>.<br><br> You can
+            test his work yourself.<br><br> If you need an experienced and enthusiastic development team for your application,
+            we're
+            ready to sign up for NDA to discuss your ideas, give you advice and give you feedback based on your
+            experience.
+            We'll be happy to help.</p>
+
+
+
+      <div class="share-block article-content__share-block">
+        <p class="share-block__text">Like this article? Share it with your friends then!</p>
+        <a href="#" class="share-block__link vb"><img src="assets/images/blog/post/icons/Viber.png" alt=""></a>
+        <a href="#" class="share-block__link fb"><img src="assets/images/blog/post/icons/Facebook.png" alt=""></a>
+        <a href="#" class="share-block__link in"><img src="assets/images/blog/post/icons/Linkedin.png" alt=""></a>
+        <a href="#" class="share-block__link tw"><img src="assets/images/blog/post/icons/Twitter.png" alt=""></a>
+        <a href="#" class="share-block__link pt"><img src="assets/images/blog/post/icons/Pinterest.png" alt=""></a>
+      </div>
+
+    </section>
+  </article>
+
+  <section class="catalog-section catalog-section_bottom">
+    <div class="wrapper">
+      <div class="container">
+        <h2 class="catalog-section__title">Recent Blog Posts</h2>
+        <div class="catalog">
+          <div class="catalog__item">
+            <div class="item item_blog wow zoomIn" style="visibility: visible; animation-name: jb;">
+              <a class="item__image-wrapper" href="#"
+                style="background-image: url(assets/images/blog/post/blog-item-post-1.jpg)"></a>
+              <div class="item__content">
+                <h3 class="item__title"><a href="#">Personal Account Software</a></h3>
+                <ul class="item__meta">
+                  <li>Jan 30, 2020</li>
+                  <li>Software Development</li>
+                </ul>
+                <div class="item__text">We have projected, designed and programmed a personal account for a digital
+                  agency that provides setting up and running pay-per-click advertising services. The...</div><a
+                  class="item__more-link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item">
+            <div class="item item_blog wow zoomIn" style="visibility: visible; animation-name: jb;">
+              <a class="item__image-wrapper" href="#"
+                style="background-image: url(assets/images/blog/post/blog-item-post-2.jpg)"></a>
+              <div class="item__content">
+                <h3 class="item__title"><a href="#">Super Precise Tuner App Creation</a></h3>
+                <ul class="item__meta">
+                  <li>Jan 8, 2020</li>
+                  <li>Entertainment&nbsp;&nbsp;iOS&nbsp;&nbsp;Music&nbsp;&nbsp;Swift</li>
+                </ul>
+                <div class="item__text">We have projected, designed and programmed a personal account for a digital
+                  agency that provides setting up and...</div><a class="item__more-link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__item">
+            <div class="item item_blog wow zoomIn" style="visibility: visible; animation-name: jb;">
+              <a class="item__image-wrapper" href="#"
+                style="background-image: url(assets/images/blog/post/blog-item-post-3.jpg)"></a>
+              <div class="item__content">
+                <h3 class="item__title"><a href="#">App Store Optimization</a></h3>
+                <ul class="item__meta">
+                  <li>Dec 27, 2019</li>
+                  <li>Management</li>
+                </ul>
+                <div class="item__text">Started in 2013, Axora is basically a multifaceted IT Service providing company
+                  which marks its roots at Belarus. Introducing his company Axora, CEO Vladimir...</div><a
+                  class="item__more-link" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-section__footer"><a class="catalog-section__more-btn btn" href="#">More Blog Posts</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <div class="wrapper">
+      <div class="container">
+        <div class="container">
+          <div class="container">
+            <h2 class="contact-us__title">Feel Free to Contact Us!</h2>
+            <form class="contact-us__form js-contact-form">
+              <div class="contact-us__row">
+                <div class="contact-us__col">
+                  <div class="form-group">
+                    <label class="form-group__label">Name</label>
+                    <input class="form-control" type="text" name="name" required>
+                  </div>
+                </div>
+                <div class="contact-us__col">
+                  <div class="form-group">
+                    <label class="form-group__label">E-mail</label>
+                    <input class="form-control" type="email" name="email" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-group__label">Request Details</label>
+                <textarea class="form-control" name="message" rows="6" required></textarea>
+              </div>
+              <div class="form-btn-row">
+                <button class="btn" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__section footer__section_1">
+          <div class="footer__col footer__col_logo">
+            <a class="footer__logo" href="index.html">
+              <img src="assets/images/logo.svg">
+            </a>
+            <div class="footer__copyright">All rights reserved, 2019</div>
+          </div>
+          <div class="footer__col footer__col_subscribe">
+            <div class="footer-subscribe">
+              <div class="footer-subscribe__title">Newsletter with Latest Posts</div>
+              <form class="footer-subscribe__form js-subscribe-form">
+                <div class="footer-subscribe__input-field">
+                  <input class="footer-subscribe__input form-control" type="email" name="subscibe"
+                    placeholder="Your email" required>
+                </div>
+                <button class="footer-subscribe__btn btn btn_border" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer__section footer__section_2">
+          <div class="footer__col footer__col_widgets">
+            <div class="footer__widget footer__widget_goodfirm">
+              <div class="goodfirm-widget-wrapper">
+                <script type="text/javascript" src="https://goodfirms.co/js/widget.js"></script>
+                <div class="goodfirm-widget" data-widget-type="goodfirms-widget-t3" data-widget-pattern="star-basic"
+                  data-height="100" data-company-id="14354"></div>
+              </div>
+            </div>
+            <div class="footer__widget footer__widget_clutch">
+              <div class="clutch-widget-wrapper">
+                <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+                <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1" data-height="50"
+                  data-darkbg="1" data-clutchcompany-id="728830"></div>
+              </div>
+            </div>
+            <div class="footer__widget footer__widget_topappdevelopmentcompanies">
+              <div class="topappdevelopmentcompanies-widget-wrapper">
+                <a href="https://topappdevelopmentcompanies.com/by/directory/app-developers/minsk" target="_blank">
+                  <img src="https://topappdevelopmentcompanies.com/badges/top-app-development-companies.png"
+                    alt="app developers minsk" title="App Developers Minsk" style="height: 80px; width: 80px;" />
+                </a><span class="topappdevelopmentcompanies-widget-text">Top 10 App<br> Developers</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer__col footer__col_contacts">
+            <div class="footer__contacts">
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-address">
+                  <svg class="icon icon-address-pin">
+                    <use xlink:href="#icon-address-pin"></use>
+                  </svg>Minsk, Karl&nbsp;Liebknecht&nbsp;66</div><a class="footer__contacts-phone"
+                  href="tel:+375293771787">+375 29 377 17 87</a>
+              </div>
+              <div class="footer__contacts-item">
+                <div class="footer__contacts-address">
+                  <svg class="icon icon-address-pin">
+                    <use xlink:href="#icon-address-pin"></use>
+                  </svg>Boston, 6&nbsp;Liberty&nbsp;Square</div>
+                <ul class="footer__contacts-links">
+                  <li><a href="https://www.instagram.com/axora.by/" target="_blank">Instagram</a>
+                  </li>
+                  <li><a href="https://www.linkedin.com/company/axorallc" target="_blank">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup-window" id="contact-popup">
+    <div class="popup-window__header">
+      <h2 class="popup-window__title">Feel Free to Contact Us!</h2>
+      <div class="popup-window__subtitle special-text">Our specialist will contact you within 1 working day</div>
+    </div>
+    <form class="contact-us__form js-contact-form">
+      <div class="contact-us__row">
+        <div class="contact-us__col">
+          <div class="form-group">
+            <label class="form-group__label">Name</label>
+            <input class="form-control" type="text" name="name" required>
+          </div>
+        </div>
+        <div class="contact-us__col">
+          <div class="form-group">
+            <label class="form-group__label">E-mail</label>
+            <input class="form-control" type="email" name="email" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-group__label">Request Details</label>
+        <textarea class="form-control" name="message" rows="6" required></textarea>
+      </div>
+      <div class="form-btn-row">
+        <button class="btn" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (m, e, t, r, i, k, a) {
+    m[i] = m[i] || function () {
+      (m[i].a = m[i].a || []).push(arguments)
+    };
+    m[i].l = 1 * new Date();
+    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+  })
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(56740549, "init", {
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true,
+    webvisor: true
+  });
+</script>
+<noscript>
+  <div><img src="https://mc.yandex.ru/watch/56740549" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154803198-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154803198-1');
+</script>
+
+</html>
