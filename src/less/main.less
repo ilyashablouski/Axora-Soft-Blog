@@ -51,6 +51,16 @@ html.is-noscroll body {
 *:before,
 *:after {
   box-sizing: inherit;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 html,
@@ -230,6 +240,7 @@ h6,
     line-height: 27px;
     margin: 0 auto;
   }
+
   &_wd {
     max-width: 640px;
   }
@@ -2408,7 +2419,7 @@ html.is-header-hide .header {
 }
 
 /* own */
-.main-slider p {
+.blog-slider p {
   display: inline-block;
   margin: 0 auto;
   font-size: 3rem;

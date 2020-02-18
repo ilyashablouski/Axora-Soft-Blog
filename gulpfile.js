@@ -24,7 +24,7 @@ const config = {
   //   dest: './prod',
   // },
   css: {
-    src: 'less/+(blog).less',
+    src: 'less/+(main).less',
     // src: 'css/style.css',
     watch: 'less/**/*.less',
     dest: 'css',
